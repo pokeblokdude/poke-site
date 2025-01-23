@@ -39,8 +39,8 @@ export default function Home() {
             <FaYoutube className="w-full h-full text-[#ff0033]"/>
           </PokeLink>
           <PokeLink
-            text='@pokebd'
-            url='https://bsky.app/profile/pokebd.bsky.social'
+            text='@poke.place'
+            url='https://bsky.app/profile/poke.place'
           >
             <FaBluesky className="w-full h-full text-[#1185fe]"/>
           </PokeLink>
@@ -54,7 +54,7 @@ export default function Home() {
       </main>
 
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center opacity-25">
-        Last updated 1/22/25
+        Last updated 1/23/25
       </footer>
     </div>
   );
