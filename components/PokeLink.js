@@ -14,7 +14,7 @@ const PokeLink = ({ text, url, children }) => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <div className={`w-20 h-20 mb-1`}>
+      <div className={`flex w-20 h-20 mb-1 justify-center items-center`}>
         {children}
       </div>
       <div className={`${hovered ? 'underline' : ''} text-sm`}>{text}</div>

@@ -1,7 +1,7 @@
 import PokeLink from "@/components/PokeLink";
 import Image from "next/image";
 import { FaYoutube } from "react-icons/fa";
-import { FaBluesky, FaInstagram } from "react-icons/fa6";
+import { FaBluesky, FaInstagram, FaPatreon } from "react-icons/fa6";
 
 export default function Home() {
 
@@ -27,6 +27,14 @@ export default function Home() {
         </header>
         <div className="flex-col sm:flex sm:flex-row w-full justify-center sm:mb-8">
           <PokeLink
+            text='@poke_bd'
+            url='https://patreon.com/poke_bd'
+          >
+            <FaPatreon
+              className="w-3/4 h-3/4 self-center"
+            />
+          </PokeLink>
+          <PokeLink
             text='@poke_'
             url='https://www.youtube.com/@poke_'
           >
@@ -42,19 +50,22 @@ export default function Home() {
             text='@poke.place'
             url='https://bsky.app/profile/poke.place'
           >
-            <FaBluesky className="w-full h-full text-[#1185fe]"/>
+            <FaBluesky className="w-4/5 h-4/5 text-[#1185fe]"/>
           </PokeLink>
           <PokeLink
             text='@poke.bd'
             url='https://instagram.com/poke.bd'
           >
-            <FaInstagram className="w-full h-full text-[#ff0069]"/>
+            <FaInstagram className="w-[80%] h-[80%] text-[#ff0069]"/>
           </PokeLink>
         </div>
+        <p className="font-normal text-xs ">
+          email: <a href="mailto:alex@poke.place" className="font-bold hover:underline">alex@poke.place</a>
+        </p>
       </main>
 
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center opacity-25">
-        Last updated 1/23/25
+        Last updated 2/17/25
       </footer>
     </div>
   );
