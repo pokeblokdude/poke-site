@@ -1,7 +1,7 @@
 import PokeLink from "@/components/PokeLink";
 import Image from "next/image";
 import { FaYoutube } from "react-icons/fa";
-import { FaBluesky, FaInstagram, FaPatreon } from "react-icons/fa6";
+import { FaBluesky, FaInstagram, FaPatreon, FaItchIo } from "react-icons/fa6";
 
 export default function Home() {
 
@@ -25,14 +25,20 @@ export default function Home() {
             </p>
           </div>
         </header>
-        <div className="flex-col sm:flex sm:flex-row w-full justify-center sm:mb-8">
+        <ul className="flex w-full justify-center sm:mb-8 flex-wrap max-w-[900px]">
           <PokeLink
-            text='@poke_bd'
-            url='https://patreon.com/poke_bd'
+            text='poke-bd.itch.io'
+            url='https://poke-bd.itch.io/'
           >
-            <FaPatreon
-              className="w-3/4 h-3/4 self-center"
+            <FaItchIo
+              className="w-3/4 h-3/4 self-center text-[#fa5c5c]"
             />
+          </PokeLink>
+          <PokeLink
+            text='@poke_gamedev'
+            url='https://www.youtube.com/@poke_gamedev'
+          >
+            <FaYoutube className="w-full h-full text-[#ff0033]"/>
           </PokeLink>
           <PokeLink
             text='@poke_'
@@ -41,10 +47,12 @@ export default function Home() {
             <FaYoutube className="w-full h-full text-[#ff0033]"/>
           </PokeLink>
           <PokeLink
-            text='@poke_gamedev'
-            url='https://www.youtube.com/@poke_gamedev'
+            text='@poke_bd'
+            url='https://patreon.com/poke_bd'
           >
-            <FaYoutube className="w-full h-full text-[#ff0033]"/>
+            <FaPatreon
+              className="w-3/4 h-3/4 self-center"
+            />
           </PokeLink>
           <PokeLink
             text='@poke.place'
@@ -58,14 +66,14 @@ export default function Home() {
           >
             <FaInstagram className="w-[80%] h-[80%] text-[#ff0069]"/>
           </PokeLink>
-        </div>
+        </ul>
         <p className="font-normal text-xs ">
           email: <a href="mailto:alex@poke.place" className="font-bold hover:underline">alex@poke.place</a>
         </p>
       </main>
 
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center opacity-25">
-        Last updated 2/17/25
+        Last updated 8/22/25
       </footer>
     </div>
   );

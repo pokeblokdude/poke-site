@@ -10,7 +10,7 @@ const PokeLink = ({ text, url, children }) => {
     <Link
       href={url}
       target='_blank'
-      className='flex flex-col items-center justify-center my-10 sm:mx-8 sm:my-0'
+      className='flex flex-col items-center justify-center mx-2 sm:mx-6 sm:my-0 w-36 h-36'
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
